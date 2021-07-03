@@ -29,7 +29,7 @@ func generateStruct(name string, fields string) string {
 
 	builder.WriteString("}\n\n")
 
-	builder.WriteString(fmt.Sprintf("func (obj *%s) accept(v AstVisitor) {\n\tv.Visit%s(obj)\n}", name, name))
+	builder.WriteString(fmt.Sprintf("func (obj *%s) Accept(v AstVisitor) {\n\tv.Visit%s(obj)\n}", name, name))
 	return builder.String()
 }
 
@@ -62,6 +62,7 @@ func generateInterface(structs ...string) string {
 	}
 
 	builder.WriteString("}\n\n")
+	builder.WriteString("type Expr interface {\n\tAccept(x AstVisitor)\n}\n\n")
 	return builder.String()
 }
 
