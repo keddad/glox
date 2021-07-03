@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Run Interactive" type="GoApplicationRunConfiguration" factoryName="Go Application">
+    <module name="glox" />
+    <working_directory value="$PROJECT_DIR$" />
+    <kind value="PACKAGE" />
+    <package value="glox/glox" />
+    <directory value="$PROJECT_DIR$" />
+    <filePath value="$PROJECT_DIR$/glox/main.go" />
+    <method v="2" />
+  </configuration>
+</component>

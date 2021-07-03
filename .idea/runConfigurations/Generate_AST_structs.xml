@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Generate AST structs" type="GoApplicationRunConfiguration" factoryName="Go Application">
+    <module name="glox" />
+    <working_directory value="$PROJECT_DIR$" />
+    <parameters value="glox/ast/structs.go" />
+    <kind value="PACKAGE" />
+    <package value="glox/tooling" />
+    <directory value="$PROJECT_DIR$" />
+    <filePath value="$PROJECT_DIR$/tooling/ast_gen.go" />
+    <method v="2" />
+  </configuration>
+</component>
